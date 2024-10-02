@@ -1,0 +1,91 @@
+mapping after doing anything 
+inspration >> بتروح مواقع عشان تاخد منها افكار 
+ex >> serch about landing page insipration 
+
+1- محتاحين مكتبه ال normalize.css
+بتخلي الموقع بتاعك يظهر بشكل طبيعي على جميع المتصفحا 
+وبيشيلك المارجين والبادينح والحاجات دب 
+2- font to work by it >> by ex open sans 
+3- :root {
+  --main--color: #ff9800;
+}
+
+4- موضع اللوكل استورج الموقع لما يجي يشتغل بيرويبث على اللوكال استورج فيها قيم ولاا لا 
+لو لقا ان فيها قيم هيروح ياخدلك القيمه دي ويعمل سيت ليها للعنصر الي انت محدده 
+لو مفيش بقا هيكمل زي ما هو لحد مانت تعمل قيمه ميعنه وتحطها 
+1- لازم نروحح نعمل اتشيك هل فيه قيمه مودجوده ولا لا 
+
+5- *{
+  box-sizing: border-box;
+}
+مهمه جدا عشان مبيحسبش الباديمنج والماريجين الاعتيادي بتوع المتصفح على العنصر بتاعنا 
+
+
+6-   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+نعمل اسكرول والعلامه مش موجوده 
+
+
+7-  
+.testemonials .ts-box:not(:last-of-type) 
+very important 
+
+8- اتاكد انالصورمحانبه لوهتسلم مموقع لعميل 
+وان ميكونش حد شاريها او عليها كوبي رايت 
+
+8- مهم موضوعالتوسيط لو انت عارف الماسحه استخدم اليفت خميسن فيالمه ولماريجين مينص نص الماسحه 
+لكن لو معندمش النساحه يبقا نستخدم الترانسليت 
+
+9-Remember also if ome thing is repitive in your proect make it dynamic like add classactive make function make that 
+وبيكون اسمها الفنككشنالتي يعني دونت ريبييت يور سيلف يا معلم 
+d r y concept 
+10- if any btn or any thing is repeatin css or some thuing like that make it dynamic  
+
+11- null يعني مش موجوده واصح حاجه في التشيك على اللوكال اسورج 
+اما"" جي مشوموضمونه وممكن تطلعلك ايرور 
+
+12 - 
+.contact .container form input:not([type="submit"]),
+ هيتجمنب الانبت الي نوعه سبميت 
+
+ 13 - 
+/* Start Grid System */
+/* 
+567 >> frist screen 
+@media(min-width : 576px){}/* small devices
+
+768 >> sec screen 
+@media(min-width : 768px){}/* meim devices
+
+992 >> third screen 
+@media(min-width : 992px){}/* desktop devices
+
+1200 >> fourth screen 
+@media(min-width : 992px){}/* large devices
+
+*/
+/* End Grid System */
+/* ولما نيجي نظبط مثلاحاجه هتاخد الميديا بتاعت الموبايل والتابلت الي 
+هي صغير وو وسط 
+هنروح نشوف الميدا الي اكبر منه الي هي اخر المديا بتاعته الوسط مثلا 
+576 > 768 >>>  المديا الصغيره هتخلص 767  
+
+768 هتخلص مثلا في991 
+ف احنا بقا نروح نقوله 
+max width 991 هتشمل ايه كل الي تحته 
+
+والافض كل جزئيه يكون ليها التنسيقات بتعاتها 
+
+*/
+
+14 - Absolutely, your understanding is correct! When you use e.stopPropagation(), you are essentially telling the browser to stop the event from propagating any further. In other words, it prevents the event from reaching other elements in the DOM hierarchy.
+
+So, if you have nested elements with event listeners (e.g., a child element within a parent element), clicking on the child element triggers its event handler. Without e.stopPropagation(), the event would then continue to propagate up the DOM tree, triggering any click event handlers on the parent elements. However, when you use e.stopPropagation(), it ensures that the event doesn't propagate beyond the current element where the event occurred.
+
+Your analogy of telling the event not to make any other events beyond that point is a good way to think about it. It's a useful tool when you want to isolate the handling of a specific event to a particular element without affecting its ancestors or descendants.
+ >> ,< < vrey important 
+
+if (window.scrollY >= window.innerHeight * 0.5) {
+    // Action to perform when scrolled 50% of viewport height
+}

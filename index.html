@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Deisgn</title>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/normlize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+  </head>
+
+  <body>
+    <!-- Start Setting Box -->
+    <div class="settings-box">
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <!-- هنعمل داتا كلور عشان نعتمد عليه في الجافا اكريبت  -->
+            <li class="active" data-color="#038dff"></li>
+            <li data-color="#ff80ee"></li>
+            <li data-color="#ffffff"></li>
+            <li data-color="#0beea2"></li>
+            <li data-color="#ff6a00"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Backgrounds</h4>
+          <div class="random-bg">
+            <!-- data- << custom attrubite or cutom data  -->
+            <span class="yes active" data-background="yes">Yes</span>
+            <span class="no" data-background="no">No</span>
+            <h4>Set Time</h4>
+            <div class="set-time">
+              <input
+                id="settime"
+                type="number"
+                placeholder="Sec Num"
+                title="1min at least" />
+              <button class="submittime">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="option-box">
+          <div class="select-bg">
+            <h4>Select Background</h4>
+            <span data-bgselect="a10.jpg"><img src="imgs/a10.jpg" alt /></span>
+            <span data-bgselect="a11.jpg"><img src="imgs/a11.jpg" alt /></span>
+            <span data-bgselect="a12.jpg"><img src="imgs/a12.jpg" alt /></span>
+            <span data-bgselect="a13.jpg"><img src="imgs/a13.jpg" alt /></span>
+            <span data-bgselect="a14.jpg"><img src="imgs/a14.jpg" alt /></span>
+            <span data-bgselect="a15.jpg"><img src="imgs/a15.jpg" alt /></span>
+            <span data-bgselect="a16.jpg"><img src="imgs/a16.jpg" alt /></span>
+            <span data-bgselect="a17.jpg"><img src="imgs/a17.jpg" alt /></span>
+            <span data-bgselect="a20.jpg"><img src="imgs/a20.jpg" alt /></span>
+          </div>
+        </div>
+        <div class="option-box">
+          <div class="nav-scrolling">
+            <h4>Nav Scrolling</h4>
+            <span class="yes active" data-nav="fixed">Yes</span>
+            <span class="no" data-nav="relative">No</span>
+          </div>
+        </div>
+        <div class="option-box">
+          <div class="bullets">
+            <h4>Show Bullets</h4>
+            <span class="yes active" data-dsiplay="show">Yes</span>
+            <span class="no" data-dsiplay="hide">No</span>
+          </div>
+        </div>
+        <button class="rest-options">Reset Options</button>
+      </div>
+    </div>
+    <!-- End Setting Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+      <div data-link="aboutUs" class="bullet">
+        <div class="tool-tip">About Us</div>
+      </div>
+      <div data-link="skills" class="bullet">
+        <div class="tool-tip">Our Skills</div>
+      </div>
+      <div data-link="gallary" class="bullet">
+        <div class="tool-tip">Our Gallary</div>
+      </div>
+      <div data-link="Services" class="bullet">
+        <div class="tool-tip">Featuers</div>
+      </div>
+      <div data-link="Testimonials" class="bullet">
+        <div class="tool-tip">Testimonials</div>
+      </div>
+      <div data-link="contact" class="bullet">
+        <div class="tool-tip">Contact Us</div>
+      </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!--Start Landing Page -->
+    <div class="landing-page" style="background-image: url(imgs/a13.jpg)">
+      <i onclick="fullWidth()" class="fa-solid fa-gear gear"></i>
+
+      <div class="overlay"></div>
+
+      <div class="header-area">
+        <div class="logo">Special Design</div>
+
+        <div class="links-container">
+          <ul class="links">
+            <li><a data-link="aboutUs" href="" class="active">About Us</a></li>
+            <li><a data-link="skills" href="">Skills</a></li>
+            <li><a data-link="gallary" href="">Gallary</a></li>
+            <li><a data-link="Services" href="">Featuers</a></li>
+            <li>
+              <a data-link="Testimonials" href="">Testimonials</a>
+            </li>
+            <li><a data-link="contact" href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="bar-container">
+          <i class="fa-solid fa-chart-simple bars"></i>
+        </div>
+      </div>
+
+      <div class="intorduction-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
+          explicabo commodi. Sint sit dolore veniam eveniet cum totam
+          praesentium soluta.
+        </p>
+      </div>
+    </div>
+    <!--End Landing Page -->
+
+    <!-- Start About Us  -->
+    <div class="aboyt-us" id="aboutUs">
+      <div class="container">
+        <div class="info-box">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            quis est ipsa.
+          </p>
+        </div>
+        <div class="img-box">
+          <img src="imgs/ilustration-.png" alt />
+        </div>
+      </div>
+    </div>
+    <!-- End About Us  -->
+
+    <!-- Start Our Skills -->
+
+    <div class="skills" id="skills">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">HTML</div>
+          <div class="skill-progress"><span data-width="80%"></span></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">CSS</div>
+          <div class="skill-progress"><span data-width="70%"></span></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">PHP</div>
+          <div class="skill-progress"><span data-width="60%"></span></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">PYTHON</div>
+          <div class="skill-progress"><span data-width="70%"></span></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">JS</div>
+          <div class="skill-progress"><span data-width="80%"></span></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">MY SQL</div>
+          <div class="skill-progress"><span data-width="50%"></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Skills -->
+
+    <!-- Start Our Gallary -->
+    <div class="gallary" id="gallary">
+      <div class="container">
+        <h2>Our Gallary</h2>
+        <div class="imgs-box">
+          <img src="imgs/a10.jpg" alt="One" />
+          <img src="imgs/a12.jpg" alt="Tow" />
+          <img src="imgs/a13.jpg" alt="Three" />
+          <img src="imgs/a14.jpg" alt="Four" />
+          <img src="imgs/a15.jpg" alt="Five" />
+          <!-- مش هنعمل الت للبقاي عشان نتعلملو الت مس مجود نعمل ايه ؟  -->
+          <img src="imgs/a16.jpg" alt />
+          <img src="imgs/a17.jpg" alt />
+          <img src="imgs/a18.jpg" alt />
+          <img src="imgs/a20.jpg" alt />
+          <img src="imgs/a19.jpg" alt />
+        </div>
+      </div>
+    </div>
+    <!-- End Our Gallary -->
+
+    <!-- Start Time Line  -->
+    <div class="time-line">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2024</div>
+          <div class="left">
+            <div class="content">
+              <h3>Heading Text</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam, aspernatur!
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="rigth">
+            <div class="content">
+              <h3>content text</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam, aspernatur!
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2022</div>
+          <div class="left">
+            <div class="content">
+              <h3>content text</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam, aspernatur!
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3>content text</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam, aspernatur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Time Line  -->
+
+    <!-- Start Our features -->
+    <div class="features" id="Services">
+      <h2>Our Featuers</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="imgs/icon1.png" alt />
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            omnis accusamus veritatis!
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/icon2.png" alt />
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            omnis accusamus veritatis!
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/icon3.png" alt />
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            omnis accusamus veritatis!
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/icon4.png" alt />
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            omnis accusamus veritatis!
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/icon5.png" alt />
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            omnis accusamus veritatis!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Our features -->
+
+    <!-- Start Testimonials  -->
+    <div class="testemonials" id="Testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+
+        <div class="ts-box">
+          <div class="person-info">
+            <!-- img on the fly it will come from the web auto  -->
+            <img src="imgs/tetemonils.png" alt />
+            <h4>Mohamed Ashraf</h4>
+            <p>CEO At companey</p>
+          </div>
+          <p>
+            I'm incredibly impressed with the outstanding service provided by
+            this website. The user-friendly interface, coupled with prompt and
+            helpful customer support, made my experience truly exceptional.
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="ts-box">
+          <div class="person-info">
+            <!-- img on the fly it will come from the web auto  -->
+            <img src="imgs/me.png" alt />
+            <h4>Omar Rahal</h4>
+            <p>CEO At companey</p>
+          </div>
+          <p>
+            I've tried several platforms, but this website stands out for its
+            reliability and efficiency. The seamless navigation and wealth of
+            resources have proven invaluable to my needs.
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="ts-box">
+          <div class="person-info">
+            <!-- img on the fly it will come from the web auto  -->
+            <img src="imgs/testimonials2.jpg" alt />
+
+            <h4>Yara Morsi</h4>
+            <p>CEO At companey</p>
+          </div>
+          <p>
+            As twilight enveloped the city, the skyline transformed into a
+            mesmerizing display of twinkling lights against the darkening sky
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- End Testimonials  -->
+
+    <!-- Start Contact Us -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <h2 class="contacth2">Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="username" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="text" placeholder="Your Email" name="useremail" />
+            <input type="text" placeholder="Your Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="massge" placeholder="Your Massge"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Scrool To Top -->
+    <div class="scroll-top">
+      <i class="fa-solid fa-up-long"></i>
+    </div>
+    <!-- Scrool To Top -->
+    <!-- Start Footer -->
+    <div class="footer">Created With Love By Omar Rahal</div>
+    <!-- End Footer -->
+    <script src="js/master.js"></script>
+  </body>
+</html>
+<!-- 1- Make option for user to make nav scrooling or not  -->
+<!-- 2- Make them for the wbsite  -->
+<!-- 3- library >> head room : make the nav is go when you sclool dwn and when u scroolup is show  -->
